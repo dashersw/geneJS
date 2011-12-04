@@ -13,3 +13,9 @@ Since it's the product of a weekend code run, the code is as messy as it can be.
 ## Current version
 
 I wanted to see if I could develop a reasonable code generator so I began from the end; coding templates and then the object tree output. The generator works fine with the functionality in the commented out, dummy object registry ( see Registry.js), but conversion from PlantUML is in its very early stages and is but a prototype.
+
+## Near future
+
++ The code will cover all the class diagram paradigms of PlantUML.
++ It should run in Node with nclosure and read actual PlantUML files and create actual output files.
++ The code should be rearranged to structurally add more languages.
