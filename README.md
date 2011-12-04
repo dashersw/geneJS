@@ -18,4 +18,5 @@ I wanted to see if I could develop a reasonable code generator so I began from t
 
 + The code will cover all the class diagram paradigms of PlantUML.
 + It should run in Node with nclosure and read actual PlantUML files and create actual output files.
-+ The code should be rearranged to structurally add more languages.
++ The code should be rearranged to make it possible to structurally add support for more languages.
++ geneJS should be able to generate its entire source code from appropriate PlantUML diagrams. (yeah right.)
