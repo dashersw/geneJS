@@ -60,7 +60,7 @@ geneJS.Parser.prototype.createStates = function () {
     });
 
     var PROPERTY = new tart.State(function (line) {
-        var prop = /^([\+\-])(\S+)\s+:\s+(\S+)/.exec(line);
+        var prop = /^([\+\-])\s*(\S+)\s+:\s+(\S+)/.exec(line);
         var property = new geneJS.Property(prop[2], prop[3], prop[1]);
 
         this.currentClass.properties.push(property);
