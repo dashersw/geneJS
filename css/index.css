@@ -1,2 +1,3 @@
-#plantUML, #generated { height: 400px; width: 400px; font: 10px 'Monaco'; }
+#plantUML, #generated { height: 400px; width: 400px; font: 10px 'Monaco'; overflow: auto }
 #generate { height: 100px; width: 816px }
+pre { display: inline-block; }

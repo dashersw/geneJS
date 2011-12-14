@@ -37,5 +37,5 @@ geneJS.index.prototype.generate = function() {
 
     var generator = new geneJS.Generator(this.registry);
     uml = generator.generate(uml);
-    this.generated.value = uml;
+    this.generated.innerHTML = uml;
 }
