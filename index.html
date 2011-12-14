@@ -17,14 +17,21 @@
     namespace foo
 
         class Vehicle {
-            -name : String
-            -id : String
+            -name : string
+            -id : string
         }
 
     class Vehicle2 {
-                -name : String
-                -id : String
+                -name : string
+                -id : string
             }
+
+    Car <|-- Vehicle
+
+    class Car {
+        - make : number
+        - model : string
+    }
     end namespace
 
 </textarea>
