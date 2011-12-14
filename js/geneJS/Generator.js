@@ -39,7 +39,7 @@ geneJS.Generator.prototype.generate = function (text) {
 
     goog.object.forEach(this.registry.classes, function (cls) {
         cls.iterator = that.propertyIterator;
-        output += Mustache.to_html(geneJS.templates.class, cls) + '******\n';
+        output += Mustache.to_html(geneJS.templates.class, cls) + '/******/\n';
     })
     return output;
 };
