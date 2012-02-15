@@ -13,5 +13,12 @@
 // limitations under the License.
 
 /**
- * @fileoverview Externs declarations for geneJS.
+ * @fileoverview
  */
+
+debugger;
+require('nclosure').nclosure();
+
+goog.require('geneJS.Bootstrapper');
+
+var a = new geneJS.Bootstrapper();

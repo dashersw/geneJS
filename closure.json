@@ -1,0 +1,4 @@
+{
+  additionalDeps:['deps.js'],
+  closureBasePath:'third_party/tartJS/third_party/goog/goog/'
+}
