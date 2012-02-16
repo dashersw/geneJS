@@ -16,7 +16,6 @@
  * @fileoverview
  */
 
-debugger;
 require('nclosure').nclosure();
 
 goog.require('geneJS.Bootstrapper');
