@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+require('path');
+
+var geneJS = require('../cli.js');
+
+var args = process.argv;
+
+var language = args[2];
+var inputFolder = args[3] || 'json';
+var outputFolder = args[4] || 'out';
+
+inputFolder = path.resolve(inputFolder);
+outputFolder = path.resolve(outputFolder);
+
+geneJS.process(language, inputFolder, outputFolder);
