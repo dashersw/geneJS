@@ -1,1 +1,4 @@
 .idea
+json/*
+out/*
+node_modules/*
