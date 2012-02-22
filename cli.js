@@ -35,7 +35,7 @@ geneJS.cli.process = function(language, inputFolder, outputFolder) {
 
 	var generator = new geneJS.Generator(registry.getInputs());
 
-	var outputs = generator.generate(languageLoader.languages[language]);r
+	var outputs = generator.generate(languageLoader.languages[language]);
 	goog.object.forEach(outputs, function(output, key) {
 		fs.writeFile(outputFolder + '/' + key + '.js', output);
 	});
