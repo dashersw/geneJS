@@ -31,13 +31,19 @@ geneJS.cli.process = function(language, inputFolder, outputFolder) {
 	var languageLoader = new geneJS.LanguageLoader();
 	languageLoader.load();
 
-	var registry = new geneJS.Registry(inputFolder);
+    var languageObj = languageLoader.languages[language];
 
+	var registry = new geneJS.Registry(inputFolder);
 	var generator = new geneJS.Generator(registry.getInputs());
 
-	var outputs = generator.generate(languageLoader.languages[language]);r
+	var outputs = generator.generate(languageObj);
 	goog.object.forEach(outputs, function(output, key) {
-		fs.writeFile(outputFolder + '/' + key + '.js', output);
+		fs.writeFile(outputFolder 
+            + '/' 
+            + key 
+            + '.' 
+            + languageObj.options.fileExtension, 
+            output);
 	});
 };
 
