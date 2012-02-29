@@ -28,23 +28,23 @@ require('fs');
 
 
 geneJS.cli.process = function(language, inputFolder, outputFolder) {
-	var languageLoader = new geneJS.LanguageLoader();
-	languageLoader.load();
+    var languageLoader = new geneJS.LanguageLoader();
+    languageLoader.load();
 
     var languageObj = languageLoader.languages[language];
 
-	var registry = new geneJS.Registry(inputFolder);
-	var generator = new geneJS.Generator(registry.getInputs());
+    var registry = new geneJS.Registry(inputFolder);
+    var generator = new geneJS.Generator(registry.getInputs());
 
-	var outputs = generator.generate(languageObj);
-	goog.object.forEach(outputs, function(output, key) {
-		fs.writeFile(outputFolder 
-            + '/' 
-            + key 
-            + '.' 
-            + languageObj.options.fileExtension, 
+    var outputs = generator.generate(languageObj);
+    goog.object.forEach(outputs, function(output, key) {
+        fs.writeFile(outputFolder +
+            '/' +
+            key +
+            '.' +
+            languageObj.options.fileExtension, 
             output);
-	});
+    });
 };
 
 module.exports = geneJS.cli;
