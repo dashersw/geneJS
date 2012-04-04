@@ -1,0 +1,17 @@
+{
+  "name": "geneJS",
+  "description": "",
+  "version": "0.1.0",
+  "keywords": ["genejs", "code generation"],
+  "homepage": "http://twitter.github.com/hogan.js/",
+  "author": "dashersw",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dashersw/geneJS"
+  },
+  "dependencies": {
+    "nclosure": "git@github.com:burcu/nclosure.git",
+    "hogan.js": "*"
+  },
+  "bin" : { "geneJS" : "./bin/geneJS" }
+}
