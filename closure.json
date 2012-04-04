@@ -1,4 +1,5 @@
 {
   additionalDeps:['deps.js'],
+  nodeRequires: ['fs', 'path', 'hogan.js'], // Explicitly uses node require for given packages
   closureBasePath:'third_party/tartJS/third_party/goog/goog/'
 }
