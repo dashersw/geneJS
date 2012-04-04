@@ -2,3 +2,4 @@
 json/*
 out/*
 node_modules/*
+build/*
