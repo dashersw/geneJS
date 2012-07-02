@@ -10,7 +10,7 @@
     "url": "https://github.com/dashersw/geneJS"
   },
   "dependencies": {
-    "nclosure": "git@github.com:burcu/nclosure.git",
+    "nclosure": "git://github.com/burcu/nclosure.git",
     "hogan.js": "*"
   },
   "bin" : { "geneJS" : "./bin/geneJS" }
