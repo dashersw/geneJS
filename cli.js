@@ -39,11 +39,11 @@ geneJS.cli.process = function(language, inputFolder, outputFolder) {
     var outputs = generator.generate(languageObj);
     
     // locate files to directories
-    goog.object.forEach(outputs, function(file, key) {
+    goog.object.forEach(outputs, function(file) {
         var finalPath = outputFolder + '/' + file.namespace.join('/');
         
         geneJS.cli.mkdir(finalPath, 0755, function(){
-            fs.writeFile(finalPath + '/' + key + '.' +
+            fs.writeFile(finalPath + '/' + file.className + '.' +
                 languageObj.options.fileExtension, file.contents);
         });
     });
