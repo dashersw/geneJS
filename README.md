@@ -1,4 +1,4 @@
-#geneJS
+# geneJS
 
 geneJS (pronounced genesis) is a JavaScript tool that generates JavaScript code from PlantUML class diagram source.
 
