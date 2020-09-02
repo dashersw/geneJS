@@ -2,7 +2,7 @@
 
 geneJS (pronounced genesis) is a JavaScript tool that generates JavaScript code from PlantUML class diagram source.
 
-Read [this blog post](http://blog.armaganamcalar.com/post/13644220178/weekend-run-javascript-code-generation-from-plantuml) about the motivation.
+Read [this blog post](https://arm.ag/weekend-run-javascript-code-generation-from-plantuml-34b9e68ea394) about the motivation.
 
 I started geneJS as a JavaScript code generator for my class diagrams, and then i thought of doing an abstraction so anyone can put in any language. For that purpose, geneJS uses the brilliant [mustache template engine](http://mustache.github.com).
 
